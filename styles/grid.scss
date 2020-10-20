@@ -1,48 +1,42 @@
-$grid-cols: 12;
-$grid-size: 1600;
-$grid-bp-md: 500;
-$grid-bp-lg: 800;
-
-$map-grid-props: (
-  '' : 0,
-  '-md' : $grid-bp-md,
-  '-lg' : $grid-bp-lg
-);
-
-@mixin create-mq($breakpoint, $min-or-max) {
-  @if ($breakpoint == 0) {
-    @content;
-  }
-
-  @else {
-    @media screen and (#{$min-or-max}-width: $breakpoint *1px) {
-      @content;
-    }
-  }
-}
-
-@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
-  @include create-mq($breakpoint, 'min') {
-    &__col#{$modifier}-offset-0 {
-      margin-left: 0;
-    }
-
-    @for $i from 1 through $grid-cols {
-      &__col#{$modifier}-#{$i} {
-        width: (100 / ($grid-cols / $i) ) * 1%;
-      }
-      &__col#{$modifier}-offset-#{$i} {
-        margin-left: (100 / ($grid-cols / $i) ) * 1%;
-      }
-    }
-  }
-}
+@import './config';
 
 .grid {
   margin: 0 auto;
-  max-width: $grid-size * 1px;
+  max-width: $max-width;
+  overflow: hidden;
+}
 
-  @each $modifier , $breakpoint in $map-grid-props {
-    @include create-col-classes($modifier, $grid-cols, $breakpoint);
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: ($gutter / -2);
+  margin-right: ($gutter / -2);
+}
+
+.col {
+  padding-left: ($gutter / 2);
+  padding-right: ($gutter / 2);
+  width: 100%;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: ($i/$columns * 100 * 1%);
+  }
+
+  .offset-col-#{$i} {
+    margin-left: ($i/$columns * 100 * 1%);
+  }
+}
+
+@media (min-width: 800px) {
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      width: ($i/$columns * 100 * 1%);
+    }
+
+    .offset-col-md-#{$i} {
+      margin-left: ($i/$columns * 100 * 1%);
+    }
   }
 }
