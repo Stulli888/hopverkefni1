@@ -1,0 +1,23 @@
+@import './config';
+
+.latest-recipe {
+
+}
+
+.recipe-box{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  .image {
+    overflow: hidden;
+  }
+
+  img {
+    
+    object-fit: cover;
+    width: 100%;
+  }
+
+}
+
