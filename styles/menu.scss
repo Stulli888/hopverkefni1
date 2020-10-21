@@ -19,6 +19,20 @@ nav {
   header {
     margin-top: 70px;
   }
+  .menu-rectangles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+
+  }
+  .rectangle {
+    height: 1px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: $color-black;
+    margin-bottom: 10px;
+  }
   .menu {
     position: fixed;
     top: 0;
@@ -51,7 +65,7 @@ nav {
         }
         .mobile-trigger {
           &:before {
-            content: 'Close ';
+            content: 'X';
           }
         }
       }
