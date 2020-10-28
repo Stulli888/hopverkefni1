@@ -16,12 +16,15 @@
 
 .video .grid {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .video-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: content-box;
 
     & > :nth-child(-n+2) {
         margin-bottom: $bottom-margin;
@@ -46,4 +49,14 @@
     }
 }
 
+.play-icon {
+    box-sizing: content-box;
+    margin: 4em 25% 0 0;
+    max-height: 8.265em;
+}
 
+.recipe {
+    & h1 {
+        font-size: 300px;
+    }
+}
