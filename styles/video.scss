@@ -23,16 +23,13 @@
 
     h1 {
         line-height: 5rem;
-    }
-
-    :nth-child(2) {
-        font-size: 1.125em;
-        line-height: 1em;
+        font-size: 3.75rem;
+        margin-bottom: 1rem;
     }
 
     :nth-child(3) {
-        font-size: 1.125em;
-        line-height: 2em;
+        font-size: 1.125rem;
+        line-height: 2rem;
     }
 
     @media (max-width: 799px) {
@@ -47,26 +44,32 @@
         }
     }
 }
+
 .video-text-info {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1rem;
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        margin-right: $gutter*1.5;
+    
+        & .image {
+            max-height: 27px;
+            margin-right: 1em;
+        }
+    
+        @media (max-width: 799px) {
+            margin-right: 0.5;
+            margin-bottom: 0.5rem;
+        }
+    }
 }
 
-.info-item {
-    display: flex;
-    align-items: center;
-    margin-right: $gutter*1.5;
-    font-size: 1.125em;
 
-    & .image {
-        margin-right: 1em;
-    }
-
-    @media (max-width: 799px) {
-        margin-right: 0.5;
-        margin-bottom: 0.5rem;
-    }
-}
 
 .play-icon {
     min-height: 100%;
@@ -77,6 +80,6 @@
 
 .recipe {
     & h1 {
-        font-size: 300px;
+        font-size: 150px;
     }
 }
