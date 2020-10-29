@@ -1,15 +1,15 @@
 @import './config';
 
-.highlight-recipe {
+.hero-recipe {
 
   background-image: url('img/pumpkin-pie.png');
-  background-position: bottom right;
   background-repeat: no-repeat;
-  
+  min-height: 550px;
+  margin: 0 auto;
+  background-position:top left;
 }
 
-.latest-content {
-  margin: auto;
+.hero-content {
   text-align: center;
   width: 100%;
 }
