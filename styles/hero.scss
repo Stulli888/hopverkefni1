@@ -1,0 +1,16 @@
+@import './config';
+
+.hero {
+	background-image: url('img/pumpkin-pie.png');
+	background-repeat: no-repeat;
+	background-color: $color-Alabaster;
+	height: 800px;
+	
+	&-kicker {
+		color: $color-grain-brown;
+	}
+	&-content {
+	width: 100%;
+	}
+}
+
