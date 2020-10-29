@@ -38,7 +38,7 @@ body {
 
 @media (max-width: $grid-bp) {
 	.hide-sm {
-		visibility: hidden;
+		display: none;
 	}
 }
 

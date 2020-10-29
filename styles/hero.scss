@@ -7,11 +7,19 @@
 	height: 800px;
 	margin-bottom: $bottom-margin;
 	
+	&-content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+
 	&-kicker {
 		color: $color-grain-brown;
 	}
-	&-content {
-	width: 100%;
+	h1{
+		font-size: 3.75rem;
 	}
 }
 
