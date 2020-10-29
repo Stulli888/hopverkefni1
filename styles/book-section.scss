@@ -1,9 +1,15 @@
 @import './config';
 
 .book-section {
-	background-color: $color-merino;
+	background: linear-gradient($color-merino 90%, $color-white 90%);
 	margin-bottom: $bottom-margin;
 	
+	.book-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	&-kicker {
 		color: $color-grain-brown;
 	}
@@ -13,6 +19,7 @@
 	}
 	.book-cover{
 		display: flex;
+		margin-top: 4rem;
 	}
 	img {
 		max-height: 626px;
