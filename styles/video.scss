@@ -1,6 +1,6 @@
 @import './config';
 
-.video {
+.hero-video {
     color: $color-linen-white;
     width: 100%;
     min-height: 570px;
@@ -14,11 +14,6 @@
     background-position: right;
 }
 
-.video .grid {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
 
 .video-text {
     display: flex;
@@ -26,32 +21,57 @@
     justify-content: space-between;
     box-sizing: content-box;
 
-    & > :nth-child(-n+2) {
-        margin-bottom: $bottom-margin;
+    h1 {
+        line-height: 5rem;
     }
 
-    & > p {
+    :nth-child(2) {
+        font-size: 1.125em;
+        line-height: 1em;
+    }
+
+    :nth-child(3) {
         font-size: 1.125em;
         line-height: 2em;
+    }
+
+    @media (max-width: 799px) {
+        
+        & > h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        :nth-child(3) {
+            font-size: 1rem;
+        }
     }
 }
 .video-text-info {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .info-item {
     display: flex;
+    align-items: center;
     margin-right: $gutter*1.5;
     font-size: 1.125em;
 
     & .image {
         margin-right: 1em;
     }
+
+    @media (max-width: 799px) {
+        margin-right: 0.5;
+        margin-bottom: 0.5rem;
+    }
 }
 
 .play-icon {
-    box-sizing: content-box;
-    margin: 4em 25% 0 0;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
     max-height: 8.265em;
 }
 
