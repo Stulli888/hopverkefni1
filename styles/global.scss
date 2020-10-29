@@ -36,6 +36,11 @@ body {
 	}
 }
 
+@media (max-width: $grid-bp) {
+	.hide-sm {
+		display: none;
+	}
+}
 
 .testbox {
 	height: 250px;
