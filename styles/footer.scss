@@ -1,0 +1,54 @@
+@import './config';
+
+.website-footer {
+    width: 100%;
+    min-height: 330px;
+
+    &-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-shadow {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    @media ($max-width: 799px) {
+        &-shadow {display: none;}
+    }
+}
+
+.shadow {
+    width: $max-width;
+    height: 2px;
+    background-color: $color-whisper;
+}
+
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.4375rem;
+
+    & .come-and-join{
+        margin-bottom: 2rem;
+        font-size: 1.125rem;
+        line-height: 1rem;
+    }
+
+    & .social {
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.2rem;
+    }
+
+    & .website {
+        color: $color-alto;
+        line-height: 1.3rem;
+    }
+}
