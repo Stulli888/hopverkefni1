@@ -1,5 +1,19 @@
 @import './config';
 
 .book-section {
+	background-color: $color-merino;
 	
+	&-kicker {
+		color: $color-grain-brown;
+	}
+
+	&-content{
+		display: flex;
+	}
+	.book-cover{
+		display: flex;
+	}
+	img {
+		max-height: 626px;
+	}
 }
