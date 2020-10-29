@@ -1,15 +1,16 @@
 @import './config';
 
-.hero-recipe {
-
-  background-image: url('img/pumpkin-pie.png');
-  background-repeat: no-repeat;
-  min-height: 550px;
-  margin: 0 auto;
-  background-position:top left;
+.hero {
+	background-image: url('img/pumpkin-pie.png');
+	background-repeat: no-repeat;
+	background-color: $color-Alabaster;
+	height: 800px;
+	
+	&-kicker {
+		color: $color-grain-brown;
+	}
+	&-content {
+	width: 100%;
+	}
 }
 
-.hero-content {
-  text-align: center;
-  width: 100%;
-}
