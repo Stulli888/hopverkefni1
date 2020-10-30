@@ -29,11 +29,7 @@
   }
 }
 
-<<<<<<< HEAD
-@media (max-width: 799px) {
-=======
 @media (min-width: $grid-bp) {
->>>>>>> c32088b7d6f37164170001207f0d5f3c3ba84f3b
   @for $i from 1 through $columns {
     .col-md-#{$i} {
       width: ($i/$columns * 100 * 1%);
