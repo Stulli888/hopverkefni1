@@ -80,6 +80,25 @@
 
 .recipe {
     & h1 {
-        font-size: 150px;
+        font-size: 100px;
+    }
+}
+
+.video-recipes {
+    &-bottom {
+        margin: 3.125rem 0 6.44rem 0;
+
+        .row :nth-child(2) {
+            display: flex;
+            justify-content: center;
+
+            .see-more {width: 250px;}
+        }
+    }
+
+    .decorative-line {
+        width: 100%;
+        height: 1px;
+        background-color: $color-gray-whisper;
     }
 }
