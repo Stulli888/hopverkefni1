@@ -1,10 +1,49 @@
 @import './styles/config';
 
 .ingredients {
+
+	h2 {
+		color: $color-alto;
+		font-size: 1.25rem;
+		margin-bottom: $bottom-margin;
+	}
+	&-method h2 {
+		color: $color-alto;
+		font-size: 1.25rem;
+		margin-bottom: $bottom-margin;
+	}
+
+	p {
+		font-weight: 400;
+		margin-bottom: $bottom-margin;
+	}
+
+	&-method p {
+		margin-bottom: $bottom-margin;
+		color: $color-scarpa-flow;
+	}
+
+	&-list {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: $bottom-margin;
+
+	}
+
 	&-list-wrapper{
 		display: flex;
+		justify-content: space-between;
 
-		&-:first-child{}
+		& h3{
+			color: $color-grain-brown;
+			font-weight: 700;
+			font-size: 2rem;
+		}
+
+		& p{
+			font-weight: 300;
+			color: $color-dusty-gray;
+		}
 	}
 
 }
