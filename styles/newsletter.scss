@@ -52,10 +52,10 @@
 
     &-input {
         color: #525252;
-        margin-bottom: 0.75em;
+        margin-bottom: 0.75rem;
 
         > p {
-            font-size: 1.375em;
+            font-size: 1.125rem;
             line-height: 29px;
         }
 
@@ -100,6 +100,10 @@
         box-sizing: content-box;
         display: flex;
         margin: 1.5em 0 0 1.5em;
+
+        @media (max-width: 799px) {
+            margin: 1.5em 0 0 0;
+        }
 
         button {
             line-height: 24px;
