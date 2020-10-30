@@ -19,16 +19,17 @@
   width: 100%;
 }
 
-@for $i from 1 through $columns {
-  .col-#{$i} {
-    width: ($i/$columns * 100 * 1%);
-  }
-
-  .offset-col-#{$i} {
-    margin-left: ($i/$columns * 100 * 1%);
+@media (max-width: $grid-bp) {
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      width: ($i/$columns * 100 * 1%);
+    }
+  
+    .offset-col-#{$i} {
+      margin-left: ($i/$columns * 100 * 1%);
+    }
   }
 }
-
 @media (min-width: $grid-bp) {
   @for $i from 1 through $columns {
     .col-md-#{$i} {
