@@ -1,0 +1,85 @@
+@import './config';
+
+.hero-video {
+    color: $color-linen-white;
+    width: 100%;
+    min-height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: $bottom-margin;
+    background-color: $color-black;
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 56%), url('img/Bitmap.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.video-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: content-box;
+
+    h1 {
+        line-height: 5rem;
+        font-size: 3.75rem;
+        margin-bottom: 1rem;
+    }
+
+    :nth-child(3) {
+        font-size: 1.125rem;
+        line-height: 2rem;
+    }
+
+    @media (max-width: 799px) {
+        
+        & > h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        :nth-child(3) {
+            font-size: 1rem;
+        }
+    }
+}
+
+.video-text-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1rem;
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        margin-right: $gutter*1.5;
+    
+        & .image {
+            max-height: 27px;
+            margin-right: 1em;
+        }
+    
+        @media (max-width: 799px) {
+            margin-right: 0.5;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+
+
+.play-icon {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    max-height: 8.265em;
+}
+
+.recipe {
+    & h1 {
+        font-size: 150px;
+    }
+}

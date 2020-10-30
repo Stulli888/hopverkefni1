@@ -1,7 +1,8 @@
 @import './config';
 
 .latest-recipe {
-
+  margin-bottom: $bottom-margin;
+  background: linear-gradient($color-white 25%, $color-Alabaster 25%);
 }
 
 .recipe-box{
@@ -17,6 +18,27 @@
     
     object-fit: cover;
     width: 100%;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .month {
+    color: $color-dusty-gray;
+  }
+  .card-info {
+    display: flex;
+    justify-content: space-between;
+
+    p:first-child {
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+    }
+    p:last-child {
+      color: $color-grain-brown;
+    }
   }
 
 }
