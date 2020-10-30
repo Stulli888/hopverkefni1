@@ -1,0 +1,10 @@
+@import './styles/config';
+
+.ingredients {
+	&-list-wrapper{
+		display: flex;
+
+		&-:first-child{}
+	}
+
+}
