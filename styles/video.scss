@@ -1,119 +1,116 @@
 @import './config';
 
 .hero-video {
-    color: $color-linen-white;
-    width: 100%;
-    min-height: 570px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: $bottom-margin;
-    background-color: $color-black;
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 56%), url('img/Bitmap.png');
-    background-repeat: no-repeat;
-    background-position: right;
+  background-color: $color-black;
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 56%), url('img/Bitmap.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  color: $color-linen-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: $bottom-margin;
+  min-height: 570px;
+  width: 100%;
 }
 
-
 .video-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: content-box;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .hide-md {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hide-sm {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 799px) {
+    align-items: center;
 
     .hide-md {
-        display: none;
+      display: block;
+      line-height: 1.5rem;
+      margin-bottom: $bottom-margin;
     }
 
-    h1 {
-        line-height: 5rem;
-        font-size: 3.75rem;
-        margin-bottom: 1rem;
+    & > h1 {
+      font-size: 2rem;
+      text-align: center;
     }
-
-    .hide-sm {
-        font-size: 1.125rem;
-        line-height: 2rem;
-    }
-
-    @media (max-width: 799px) {
-        align-items: center;
-
-        .hide-md {
-            line-height: 1.5rem;
-            display: block;
-            margin-bottom: $bottom-margin;
-        }
-
-        & > h1 {
-            font-size: 2rem;
-            text-align: center;
-        }
-    }
+  }
 }
 
 .video-text-info {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    font-size: 1.125rem;
-    line-height: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.125rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
 
-    .info-item {
-        display: flex;
-        align-items: center;
-        margin-right: $gutter*1.5;
-    
-        & .image {
-            max-height: 27px;
-            margin-right: 1em;
-        }
-    
-        @media (max-width: 799px) {
-            margin-right: 0.5;
-            margin-bottom: 0.5rem;
-        }
+  .info-item {
+    align-items: center;
+    display: flex;
+    margin-right: $gutter*1.5;
+
+    & .image {
+      margin-right: 1em;
+      max-height: 27px;
     }
+
+    @media (max-width: 799px) {
+      margin-bottom: 0.5rem;
+      margin-right: 0.5;
+    }
+  }
 }
 
-
-
 .play-icon {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
 }
 
 .recipe {
-    & h1 {
-        font-size: 100px;
-    }
+  & h1 {
+    font-size: 100px;
+  }
 }
 
 .video-recipes {
-    .image {
-        max-height: 290px;
-    }
+  .image {
+    max-height: 290px;
+  }
 
-    &-bottom {
-        display: flex;
-        flex-wrap: none;
-        width: 100%;
-        margin: 3.125rem 0 6.44rem 0;
-    }
+  &-bottom {
+    display: flex;
+    flex-wrap: none;
+    margin: 3.125rem 0 6.44rem 0;
+    width: 100%;
+  }
 
-    .decorative-line {
-        height: 1px;
-        background-color: $color-gray-whisper;
-    }
+  .decorative-line {
+    background-color: $color-gray-whisper;
+    height: 1px;
+  }
 
-    .button-middle {
-        display: flex;
-        justify-content: center;
+  .button-middle {
+    display: flex;
+    justify-content: center;
 
-        .see-more {
-            width: 250px;
-        }
+    .see-more {
+      width: 250px;
     }
+  }
 }
