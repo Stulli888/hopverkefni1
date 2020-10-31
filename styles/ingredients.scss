@@ -1,49 +1,47 @@
 @import './styles/config';
 
 .ingredients {
+  h2 {
+    color: $color-alto;
+    font-size: 1.25rem;
+    margin-bottom: $bottom-margin;
+  }
 
-	h2 {
-		color: $color-alto;
-		font-size: 1.25rem;
-		margin-bottom: $bottom-margin;
-	}
-	&-method h2 {
-		color: $color-alto;
-		font-size: 1.25rem;
-		margin-bottom: $bottom-margin;
-	}
+  &-method h2 {
+    color: $color-alto;
+    font-size: 1.25rem;
+    margin-bottom: $bottom-margin;
+  }
 
-	p {
-		font-weight: 400;
-		margin-bottom: $bottom-margin;
-	}
+  p {
+    font-weight: 400;
+    margin-bottom: $bottom-margin;
+  }
 
-	&-method p {
-		margin-bottom: $bottom-margin;
-		color: $color-scarpa-flow;
-	}
+  &-method p {
+    color: $color-scarpa-flow;
+    margin-bottom: $bottom-margin;
+  }
 
-	&-list {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: $bottom-margin;
+  &-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $bottom-margin;
+  }
 
-	}
+  &-list-wrapper {
+    display: flex;
+    justify-content: space-between;
 
-	&-list-wrapper{
-		display: flex;
-		justify-content: space-between;
+    h3 {
+      color: $color-grain-brown;
+      font-size: 2rem;
+      font-weight: 700;
+    }
 
-		& h3{
-			color: $color-grain-brown;
-			font-weight: 700;
-			font-size: 2rem;
-		}
-
-		& p{
-			font-weight: 300;
-			color: $color-dusty-gray;
-		}
-	}
-
+    p {
+      color: $color-dusty-gray;
+      font-weight: 300;
+    }
+  }
 }

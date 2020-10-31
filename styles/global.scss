@@ -4,8 +4,9 @@
   padding: 0;
 }
 
-ol, ul{
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 a {
@@ -21,38 +22,38 @@ h4 {
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
-	font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
 }
 
-.see-more{
-	max-width: 250px;
-	height: 50px;
-	
-	button {
-		background-color:transparent;
-		border:1px solid $color-grain-brown;
-		height: 100%;
-		width: 100%;
-		color: $color-grain-brown;
-		font-weight: 500;
-		font-family: 'Poppins', sans-serif;
-	}
+.see-more {
+  height: 50px;
+  max-width: 250px;
 
-	button:hover {
-		background-color: $color-grain-brown;
-		color: $color-white;
-	}
+  button {
+    background-color: transparent;
+    border: 1px solid $color-grain-brown;
+    color: $color-grain-brown;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: $color-grain-brown;
+    color: $color-white;
+  }
 }
 
 @media (max-width: $grid-bp) {
-	.hide-sm {
-		display: none;
-	}
+  .hide-sm {
+    display: none;
+  }
 }
 
 .testbox {
-	height: 250px;
-	width: 100%;
-	background-color:$color-black;
+  background-color: $color-black;
+  height: 250px;
+  width: 100%;
 }
