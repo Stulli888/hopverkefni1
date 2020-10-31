@@ -21,26 +21,33 @@
     justify-content: space-between;
     box-sizing: content-box;
 
+    .hide-md {
+        display: none;
+    }
+
     h1 {
         line-height: 5rem;
         font-size: 3.75rem;
         margin-bottom: 1rem;
     }
 
-    :nth-child(3) {
+    .hide-sm {
         font-size: 1.125rem;
         line-height: 2rem;
     }
 
     @media (max-width: 799px) {
-        
+        align-items: center;
+
+        .hide-md {
+            line-height: 1.5rem;
+            display: block;
+            margin-bottom: $bottom-margin;
+        }
+
         & > h1 {
             font-size: 2rem;
             text-align: center;
-        }
-
-        :nth-child(3) {
-            font-size: 1rem;
         }
     }
 }
@@ -72,14 +79,41 @@
 
 
 .play-icon {
-    min-height: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    max-height: 8.265em;
+    justify-content: center;
 }
 
 .recipe {
     & h1 {
-        font-size: 150px;
+        font-size: 100px;
+    }
+}
+
+.video-recipes {
+    .image {
+        max-height: 290px;
+    }
+
+    &-bottom {
+        display: flex;
+        flex-wrap: none;
+        width: 100%;
+        margin: 3.125rem 0 6.44rem 0;
+    }
+
+    .decorative-line {
+        height: 1px;
+        background-color: $color-gray-whisper;
+    }
+
+    .button-middle {
+        display: flex;
+        justify-content: center;
+
+        .see-more {
+            width: 250px;
+        }
     }
 }
