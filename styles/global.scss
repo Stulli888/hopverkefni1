@@ -92,25 +92,5 @@ body {
     color: $color-white;
   }
 }
-button:before,
-  button:after {
-  background-color: #E7E7E7;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  width: 50%;
-}
-
-button:before {
-  right: 80%;
-  margin-left: -50%;
-}
-
-button:after {
-  left: 80%;
-  margin-right: -50%;
-}
 
 
