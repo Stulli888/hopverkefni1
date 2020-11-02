@@ -3,6 +3,33 @@
 .latest-recipe {
   background: linear-gradient($color-white 25%, $color-alabaster 25%);
   margin-bottom: $bottom-margin;
+
+  &-eyebrow {
+    color: $color-grain-brown;
+  }
+
+  &-head {
+      font-size: 2.5rem;
+      line-height: 3.125rem;
+      margin-bottom: $bottom-margin;
+
+      span {
+          color:$color-alto;
+      }
+  }
+
+  @media(max-width: $grid-bp) {
+
+    &-eyebrow {
+      font-size: 0.75rem;
+      text-align: center;
+    }
+
+    &-head {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+  }
 }
 
 .recipe-box {
@@ -43,5 +70,15 @@
     p:last-child {
       color: $color-grain-brown;
     }
+  }
+}
+
+// stillingar fyrir misstórar myndir
+
+.latest-recipe-container {
+
+  img {
+    height: 290px;
+
   }
 }

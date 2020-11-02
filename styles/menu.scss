@@ -1,5 +1,6 @@
 nav {
   background: $color-white;
+  position: fixed;
   margin: 0 auto;
   padding: 20px;
   width: 100%;
@@ -17,6 +18,16 @@ nav {
   display: flex;
   justify-content: space-between;
   list-style: none;
+
+  &__box {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -61,6 +72,10 @@ nav {
     height: 300px;
     justify-content: space-around;
     list-style: none;
+
+    p {
+      display: block;
+    }
 
     &:nth-child(2n) {
       color: lightred;
