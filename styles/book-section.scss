@@ -5,8 +5,10 @@
   margin-bottom: $bottom-margin;
 
   .book-text {
+    align-items: center;
     display: flex;
     flex-direction: column;
+    margin-top: 1.5em;
   }
 
   &-kicker {
