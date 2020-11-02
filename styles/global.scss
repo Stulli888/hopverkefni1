@@ -85,32 +85,12 @@ body {
     width: 100%;
   }
 
-  button:before,
-  button:after {
-  background-color: #E7E7E7;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  width: 50%;
-}
-
-button:before {
-  right: 0.5em;
-  margin-left: -50%;
-}
-
-button:after {
-  left: 0.5em;
-  margin-right: -50%;
-}
+  
 
   button:hover {
     background-color: $color-grain-brown;
     color: $color-white;
   }
 }
-
 
 
