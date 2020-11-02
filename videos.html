@@ -18,7 +18,7 @@
               <a href="index.html" class="nav__link">yum&yum</a>
             </li>
             <li class="nav__item">
-              <a href="recipes.html" class="nav__link">Recipes</a>
+              <a href="recipe.html" class="nav__link">Recipes</a>
             </li>
             <li class="nav__item">
               <a href="videos.html" class="nav__link">Videos</a>
@@ -31,13 +31,14 @@
     </div>
 
   	<main>
-      <!--SETJA UPP VIDEO SECTION EINS OG ÞÚ GERÐIR MEÐ FOOTER/NEWSLETTER EF EKKI OF MIKIÐ VES-->
       <section class="hero-video">
         <div class="grid">
           <div class="row">
-            <div class="col col-5 col-md-6">
+            <div class="col col-md-6 col-10 offset-col-1">
               <div class="video-text">
                 <h1>Pumpkin pie</h1>
+
+                <p class="hide-md">As you pour the first glass of your favorite Chianti or Chardonnay</p>
                 
                 <ul class="video-text-info">
                   <li class="info-item">
@@ -54,13 +55,13 @@
                   </li>
                 </ul>
     
-                <p>
+                <p class="hide-sm">
                   Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of harvest time, and pumpkin pie is often eaten during the fall and early winter.
                 </p>
               </div>
             </div>
 
-            <div class="col col-2 col-md-5 offset-col-3 offset-col-md-1">
+            <div class="col col-12 col-md-5">
               <div class="play-icon"><img src="img/Group_2.png"></div>
             </div>
             
@@ -68,23 +69,77 @@
         </div>
       </section>
 
-      <section class="recipe">
-        <h1>RECIPE HERE</h1>
+      <section class="recipe-text">
+        <div class="grid">
+          <div class="row">
+            <div class="col col-md-4 col-10 offset-col-1">
+              <section class="ingredients">
+                <h2>Ingredients</h2>
+                <p>For the dough</p>
+                <div class="ingredients-list">
+                  <div class="ingredients-list-wrapper"><h3>1</h3><p>tbs of water</p></div>
+                  <div class="ingredients-list-wrapper"><h3>2</h3><p>cups of flour</p></div>
+                  <div class="ingredients-list-wrapper"><h3>2</h3><p>eggs</p></div>
+                  <div class="ingredients-list-wrapper"><h3>1</h3><p>cup of sugar</p></div>
+                </div>
+                <p>For the filling</p>
+                <div class="ingredients-list">
+                  <div class="ingredients-list-wrapper"><h3>1</h3><p>tbs of water</p></div>
+                  <div class="ingredients-list-wrapper"><h3>2</h3><p>cups of flour</p></div>
+                  <div class="ingredients-list-wrapper"><h3>2</h3><p>eggs</p></div>
+                  <div class="ingredients-list-wrapper"><h3>1</h3><p>cup of sugar</p></div>
+                </div>
+              </section>
+            </div>
+
+            <div class="col col-md-8 col-10 offset-col-1">
+              <section class="ingredients-method">
+                <h2>Method</h2>
+                <p>
+                  Wrap the crackers in a tea towel and smash up until fine, breaking up any big bits with your hands, and put them into a large bowl.
+                </p>
+                <p>
+                  Finely chop the parsley, including the stalks. Add the parsley, mustard, if using, and minced beef to the bowl. Crack in the egg and add a good pinch of salt and pepper.
+                </p>
+                <p>
+                  With clean hands, scrunch and mix everything up well. Divide into 6 and pat and mould each piece into a roundish shape about 2cm thick. Drizzle the burgers with oil, put on a plate, cover and place in the fridge until needed (this helps them to firm up).
+                </p>
+                <p>
+                  Preheat a large griddle or frying pan for about 4 minutes on a high heat. Turn the heat down to medium.
+                </p>
+                <p>
+                  Place the burgers on the griddle or in the pan and use a spatula to lightly press down on them, making sure the burger is in full contact. Cook them to your liking for 3 or 4 minutes on each side – you may need to cook them in two batches.
+                </p>
+                <p>
+                  Wash and dry a few small lettuce leaves, tearing up the larger ones. Slice the tomatoes. Peel and finely slice the red onion. Slice the gherkins lengthways as finely as you can. Place all this on a platter and put in the middle of the table with plates, cutlery, ketchup and drinks.
+                </p>
+                <p>
+                  Remove your burgers to another plate and carefully wipe your pan or griddle clean with kitchen paper.
+                </p>
+                <p>
+                  Halve your burger buns and lightly toast them on the griddle or in the pan. Also great with a chopped salad.
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="video-recipes">
         <div class="grid">
           <div class="row">
-            <div class="col col-5 col-md-10">
-              <p>Want some moving stuff</p>
-              <h2>Check out our video recipes</h2>
+            <div class="col col-12 col-md-12">
+              <p class="video-recipes-eyebrow">Want some moving stuff</p>
+              <h2 class="video-recipes-head"><span>Check out our </span>video recipes</h2>
             </div>
           </div>
 
           <div class="row">
-            <div class="col col-4">
+            <div class="col col-md-4">
               <div class="recipe-box">
-                <div class="image"><img src="img/sushi-rolls.png" alt=""></div>
+                <div class="image sushi">
+                  <img class="box-icon" src="img/Play-Icon.svg" alt="">
+                </div>
                 <div class="recipe-box-content">
                   <div class="month">
                     <p>September</p>
@@ -97,9 +152,11 @@
               </div>
             </div>
 
-            <div class="col col-4">
+            <div class="col col-md-4">
               <div class="recipe-box">
-                <div class="image"><img src="img/cookie-plate.png" alt=""></div>
+                <div class="image cookie">
+                  <img class="box-icon" src="img/Play-Icon.svg" alt="">
+                </div>
                 <div class="recipe-box-content">
                   <div class="month">
                     <p>August</p>
@@ -112,9 +169,11 @@
               </div>
             </div>
 
-            <div class="col col-4">
+            <div class="col col-md-4">
               <div class="recipe-box">
-                <div class="image"><img src="img/other-pie.png" alt=""></div>
+                <div class="image pie">
+                  <img class="box-icon" src="img/Play-Icon.svg" alt="">
+                </div>
                 <div class="recipe-box-content">
                   <div class="month">
                     <p>August</p>
@@ -127,21 +186,40 @@
               </div>
             </div>
           </div>
-        </div>
+
+          <div class="row">
+            <section class="video-recipes-bottom">
+              <div class="col col-md-4 col-4 hide-sm">
+                <div class="decorative-line"></div>
+              </div>
+  
+              <div class="col-md-4 col-12">
+                <div class="button-middle">
+                  <div class="see-more">
+                    <button>See more</button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col col-md-4 col-4 hide-sm">
+                <div class="decorative-line"></div>
+              </div>
+           </section>
+          </div>
       </section>
 
       <section class="newsletter">
         <div class="newsletter-content">
           <div class="grid">
             <div class="row">
-              <div class="col col-5 col-md-10 offset-col-md-1">
+              <div class="col col-md-6 col-12">
                 <div class="newsletter-text">
                   <p class="newsletter-text-eyebrow">Craving more?</p>
                   <h2>Subscribe to our newsletter</h2>
                 </div>
               </div>
               
-              <div class="col col-3 offset-col-1 col-md-10 offset-col-md-1">
+              <div class="col-md-3 col-10 offset-col-1">
                 <div class="newsletter-email">
                   <p class="newsletter-email-eyebrow">Email</p>
                   <div class="newsletter-email-input">
@@ -152,17 +230,17 @@
                 </div>
               </div>
               
-              <div class="col col-3 col-md-12">
+              <div class="col col-md-3 col-12">
                 <div class="newsletter-subscribe">
                   <div class="newsletter-subscribe-button see-more button">
                     <button>Subscribe now</button>
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
+      </section>
     </main>
 
     <footer class="website-footer">

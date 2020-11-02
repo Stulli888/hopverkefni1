@@ -1,47 +1,79 @@
 @import './config';
 
 .latest-recipe {
+  background: linear-gradient($color-white 25%, $color-alabaster 25%);
   margin-bottom: $bottom-margin;
-  background: linear-gradient($color-white 25%, $color-Alabaster 25%);
 }
 
-.recipe-box{
+.recipe-box {
+  background-color: $color-white;
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: $color-white;
-  
+
   .image {
     overflow: hidden;
   }
 
   img {
-    
     object-fit: cover;
     width: 100%;
   }
+
   &-content {
     display: flex;
     flex-direction: column;
   }
+
   .month {
     color: $color-dusty-gray;
   }
+
   .card-info {
     display: flex;
     justify-content: space-between;
 
     p:first-child {
-      font-family: Playfair Display;
+      font-family: Playfair Display, serif;
+      font-size: 22px;
       font-style: normal;
       font-weight: bold;
-      font-size: 22px;
     }
+
     p:last-child {
       color: $color-grain-brown;
     }
   }
-
 }
 
+.headline p {
+  color: #E3CDB1;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.headline {
+  color: black;
+  font-family: Playfair Display;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.onlyshowvideo{
+  color: black;
+  font-family: Playfair Display;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: right;  
+}
 

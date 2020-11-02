@@ -1,49 +1,63 @@
 @import './styles/config';
 
+.recipe-text {
+  margin-bottom: 11.25rem;
+
+  @media(max-width: $grid-bp) {
+    margin-bottom: 1.5rem;;
+  }
+}
+
 .ingredients {
 
-	h2 {
-		color: $color-alto;
-		font-size: 1.25rem;
-		margin-bottom: $bottom-margin;
-	}
-	&-method h2 {
-		color: $color-alto;
-		font-size: 1.25rem;
-		margin-bottom: $bottom-margin;
-	}
+  @media(max-width: $grid-bp) {
 
-	p {
-		font-weight: 400;
-		margin-bottom: $bottom-margin;
-	}
+    &-list-wrapper {
+      justify-content: space-between;
+    }
 
-	&-method p {
-		margin-bottom: $bottom-margin;
-		color: $color-scarpa-flow;
-	}
+  }
 
-	&-list {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: $bottom-margin;
+  h2 {
+    color: $color-alto;
+    font-size: 1.25rem;
+    margin-bottom: $bottom-margin;
+  }
 
-	}
+  &-method h2 {
+    color: $color-alto;
+    font-size: 1.25rem;
+    margin-bottom: $bottom-margin;
+  }
 
-	&-list-wrapper{
-		display: flex;
-		justify-content: space-between;
+  p {
+    font-weight: 400;
+    margin-bottom: $bottom-margin;
+  }
 
-		& h3{
-			color: $color-grain-brown;
-			font-weight: 700;
-			font-size: 2rem;
-		}
+  &-method p {
+    color: $color-scarpa-flow;
+    margin-bottom: $bottom-margin;
+  }
 
-		& p{
-			font-weight: 300;
-			color: $color-dusty-gray;
-		}
-	}
+  &-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $bottom-margin;
+  }
 
+  &-list-wrapper {
+    display: flex;
+
+    h3 {
+      color: $color-grain-brown;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: $color-dusty-gray;
+      font-weight: 300;
+    }
+  }
 }

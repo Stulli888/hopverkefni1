@@ -1,27 +1,35 @@
 @import './config';
 
 .book-section {
-	background: linear-gradient($color-merino 90%, $color-white 90%);
-	margin-bottom: $bottom-margin;
-	
-	.book-text {
-		display: flex;
-		flex-direction: column;
-	}
+  background: linear-gradient($color-merino 90%, $color-white 90%);
+  margin-bottom: ($bottom-margin * 4.375);
 
-	&-kicker {
-		color: $color-grain-brown;
-	}
+  @media(max-width: $grid-bp) {
+    margin-bottom: ($bottom-margin * 2);
+  }
 
-	&-content{
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.book-cover{
-		display: flex;
-		margin-top: 4rem;
-	}
-	img {
-		max-height: 626px;
-	}
+  .book-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+  }
+
+  &-kicker {
+    color: $color-grain-brown;
+  }
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .book-cover {
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  img {
+    max-height: 626px;
+  }
 }

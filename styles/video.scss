@@ -1,85 +1,217 @@
 @import './config';
 
 .hero-video {
-    color: $color-linen-white;
-    width: 100%;
-    min-height: 570px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: $bottom-margin;
-    background-color: $color-black;
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 56%), url('img/Bitmap.png');
-    background-repeat: no-repeat;
-    background-position: right;
+  background-color: $color-black;
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 56%), url('img/Bitmap.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  color: $color-linen-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: $bottom-margin;
+  min-height: 570px;
+  width: 100%;
 }
 
-
 .video-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: content-box;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    h1 {
-        line-height: 5rem;
-        font-size: 3.75rem;
-        margin-bottom: 1rem;
+  .hide-md {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hide-sm {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 799px) {
+    align-items: center;
+
+    .hide-md {
+      display: block;
+      line-height: 1.5rem;
+      margin-bottom: $bottom-margin;
     }
 
-    :nth-child(3) {
-        font-size: 1.125rem;
-        line-height: 2rem;
+    & > h1 {
+      font-size: 2rem;
+      text-align: center;
     }
-
-    @media (max-width: 799px) {
-        
-        & > h1 {
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        :nth-child(3) {
-            font-size: 1rem;
-        }
-    }
+  }
 }
 
 .video-text-info {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    font-size: 1.125rem;
-    line-height: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.125rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
 
-    .info-item {
-        display: flex;
-        align-items: center;
-        margin-right: $gutter*1.5;
-    
-        & .image {
-            max-height: 27px;
-            margin-right: 1em;
-        }
-    
-        @media (max-width: 799px) {
-            margin-right: 0.5;
-            margin-bottom: 0.5rem;
-        }
+  .info-item {
+    align-items: center;
+    display: flex;
+    margin-right: $gutter*1.5;
+
+    & .image {
+      margin-right: 1em;
+      max-height: 27px;
     }
+
+    @media (max-width: 799px) {
+      margin-bottom: 0.5rem;
+      margin-right: 0.5;
+    }
+  }
 }
 
-
-
 .play-icon {
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    max-height: 8.265em;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
 }
 
 .recipe {
-    & h1 {
-        font-size: 150px;
+  & h1 {
+    font-size: 100px;
+  }
+}
+
+.video-recipes {
+  background: linear-gradient(to top, #FAFAFA, 50%, #FFFFFF 50%);
+
+    &-eyebrow {
+        color: $color-grain-brown;
+    }
+
+    &-head {
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+        margin-bottom: $bottom-margin;
+
+        span {
+            color:$color-alto;
+        }
+    }
+
+    @media(max-width: 799px) {
+
+      &-eyebrow {
+        font-size: 0.75rem;
+        text-align: center;
+      }
+
+      &-head {
+        font-size: 1.25rem;
+        text-align: center;
+      }
+    }
+
+    .legumes {
+        background-image: url('img/legumes-sm.png');
+    }
+    
+    .sushi {
+        background-image: url('img/sushi-rolls.png');
+    }
+
+    .cookie {
+        background-image: url('img/cookie-plate.png');
+    }
+
+    .pie {
+        background-image: url('img/other-pie.png'); 
+    }
+        
+
+    .image {
+        width: 100%;
+        height: 230px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .box-icon {
+            display: none;
+        }
+
+        &:hover {
+
+            &.legumes {
+                background: linear-gradient(rgba(227, 205, 177, 0.7),rgba(227, 205, 177, 0.7)), url('img/legumes-sm.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &.sushi {
+                background: linear-gradient(rgba(227, 205, 177, 0.7),rgba(227, 205, 177, 0.7)), url('img/sushi-rolls.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &.cookie {
+                background-image: linear-gradient(rgba(227, 205, 177, 0.7),rgba(227, 205, 177, 0.7)), url('img/cookie-plate.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &.pie {
+                background: linear-gradient(rgba(227, 205, 177, 0.7),rgba(227, 205, 177, 0.7)), url('img/other-pie.png');
+                background-size: cover;              }
+
+            .box-icon {
+                display: block;
+                object-fit: none;
+            }
+        }
+    }
+
+    .month {
+        margin: 1.56rem 0 0 1.56rem;
+    }
+
+    .card-info {
+
+        :nth-child(1) {
+            margin-left: 1.56rem;
+        }
+
+        :nth-child(2) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        flex-wrap: none;
+        margin: 3.125rem 0 6.44rem 0;
+        width: 100%;
+
+        .decorative-line {
+            background-color: $color-gray-whisper;
+            height: 1px;
+        }
+    
+        .button-middle {
+            display: flex;
+            justify-content: center;
+    
+            .see-more {
+            width: 250px;
+            }
+        }
     }
 }
