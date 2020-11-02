@@ -1,54 +1,52 @@
 @import './config';
 
 .website-footer {
-    width: 100%;
-    min-height: 330px;
+  min-height: 330px;
+  width: 100%;
 
-    &-content {
-        display: flex;
-        justify-content: center;
-    }
+  &-content {
+    display: flex;
+    justify-content: center;
+  }
 
-    &-shadow {
-        display: flex;
-        justify-content: center;
-    }
+  &-shadow {
+    display: flex;
+    justify-content: center;
+  }
 
-
-    @media ($max-width: 799px) {
-        &-shadow {display: none;}
-    }
+  @media ($max-width: 799px) {
+    &-shadow { display: none; }
+  }
 }
 
 .shadow {
-    width: $max-width;
-    height: 2px;
-    background-color: $color-whisper;
+  background-color: $color-whisper;
+  height: 2px;
+  width: $max-width;
 }
 
-
 .content-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 6.4375rem;
+
+  & .come-and-join {
+    font-size: 1.125rem;
+    line-height: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  & .social {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6.4375rem;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+    width: 160px;
+  }
 
-    & .come-and-join{
-        margin-bottom: 2rem;
-        font-size: 1.125rem;
-        line-height: 1rem;
-    }
-
-    & .social {
-        width: 160px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 1.2rem;
-    }
-
-    & .website {
-        color: $color-alto;
-        line-height: 1.3rem;
-    }
+  & .website {
+    color: $color-alto;
+    line-height: 1.3rem;
+  }
 }
